@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyP | Portal de Clientes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="portal-body">
+    <main class="portal-shell">
+      <section class="login-panel">
+        <span class="kicker">Portal de Clientes</span>
+        <h1>Acceso seguro a expedientes y documentos.</h1>
+        <p>Seguimiento centralizado, próximas audiencias y documentación pendiente.</p>
+        <form class="login-form">
+          <label><span>Email</span><input type="email" placeholder="cliente@correo.com" /></label>
+          <label><span>Contraseña</span><input type="password" placeholder="••••••••" /></label>
+          <button class="button button-primary button-block" type="button">Ingresar</button>
+        </form>
+        <a class="back-link" href="./index.html">Volver al sitio institucional</a>
+      </section>
+
+      <section class="dashboard-panel">
+        <div class="dashboard-topbar">
+          <div>
+            <span class="kicker">Dashboard Cliente</span>
+            <h2>Panel general de expedientes</h2>
+          </div>
+          <a class="button button-secondary" href="./expediente.html">Vista abogado</a>
+        </div>
+
+        <div class="kpi-grid">
+          <article class="kpi-card"><span>Expedientes activos</span><strong>04</strong></article>
+          <article class="kpi-card"><span>Próximas audiencias</span><strong>02</strong></article>
+          <article class="kpi-card"><span>Documentos pendientes</span><strong>06</strong></article>
+        </div>
+
+        <div class="table-card">
+          <div class="table-card-head">
+            <h3>Expedientes</h3>
+            <span>Actualización en tiempo real</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>N° de Caso</th><th>Tipo</th><th>Estado</th><th>Próximo movimiento</th><th>Acciones</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>#12345</td><td>Laboral</td><td><span class="status-pill status-blue">En mediación</span></td><td>SECLO · 02/06/2026</td><td><a href="./expediente.html">Ver detalle</a></td></tr>
+                <tr><td>#12802</td><td>Civil</td><td><span class="status-pill status-green">Sentencia</span></td><td>Descarga de resolución</td><td><a href="./expediente.html">Descargar</a></td></tr>
+                <tr><td>#13044</td><td>Comercial</td><td><span class="status-pill status-amber">Prueba</span></td><td>Documental pendiente</td><td><a href="./expediente.html">Ver detalle</a></td></tr>
+                <tr><td>#13210</td><td>Laboral</td><td><span class="status-pill status-blue">Audiencia</span></td><td>Audiencia · 11/06/2026</td><td><a href="./expediente.html">Ver detalle</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

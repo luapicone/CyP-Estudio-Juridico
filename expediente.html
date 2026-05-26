@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyP | Gestión de Expedientes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="panel-body">
+    <header class="topbar" id="topbar">
+      <div class="shell topbar-inner">
+        <a class="brand" href="./index.html">CyP Estudio Jurídico</a>
+        <nav class="nav">
+          <a href="./index.html">Sitio</a>
+          <a href="./portal.html">Portal Clientes</a>
+          <a href="./expediente.html" class="active">Gestión Abogados</a>
+        </nav>
+        <a class="button button-secondary" href="./portal.html">Ver Portal</a>
+      </div>
+    </header>
+
+    <main class="shell panel-main">
+      <section class="panel-header">
+        <span class="kicker">Gestión de Expedientes</span>
+        <h1>Caso N° 12345</h1>
+        <p>Seguimiento detallado y actualización de procesos judiciales para la firma.</p>
+      </section>
+
+      <section class="management-grid">
+        <aside class="management-card">
+          <div class="card-heading"><h2>Nuevo avance</h2></div>
+          <form class="stack-form">
+            <label><span>Fecha del evento</span><input type="date" /></label>
+            <label><span>Estado actual</span><select><option>En proceso</option><option>Notificado</option><option>En audiencia</option><option>Sentencia</option><option>Archivado</option></select></label>
+            <label><span>Descripción del avance</span><textarea rows="5" placeholder="Detalle las novedades del caso"></textarea></label>
+            <label class="dropzone">
+              <input type="file" />
+              <strong>Adjuntar documentación legal</strong>
+              <small>Arrastre archivos aquí o haga clic para seleccionar PDFs y respaldos.</small>
+            </label>
+            <button class="button button-primary button-block" type="submit">Guardar avance</button>
+          </form>
+
+          <div class="summary-card">
+            <h3>Resumen del expediente</h3>
+            <div class="summary-row"><span>Carátula</span><strong>Gómez vs. TechCorp S.A.</strong></div>
+            <div class="summary-row"><span>Juzgado</span><strong>Comercial N° 4, Sec. 8</strong></div>
+            <div class="summary-row"><span>Última actividad</span><strong>12 Oct 2024</strong></div>
+          </div>
+        </aside>
+
+        <section class="management-card">
+          <div class="card-heading"><h2>Historial de actualizaciones</h2><button class="text-action" type="button">Exportar</button></div>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-icon">S</div>
+              <div class="timeline-content">
+                <div class="timeline-head"><strong>Sentencia definitiva</strong><span>14 Nov 2024 · 15:30 hs</span></div>
+                <p>El juez ha dictado sentencia favorable a la parte actora, ordenando el pago de la indemnización solicitada con más intereses.</p>
+                <div class="document-pill">Sentencia_Final_Gomez.pdf</div>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-icon">N</div>
+              <div class="timeline-content">
+                <div class="timeline-head"><strong>Notificación recibida</strong><span>28 Oct 2024 · 09:15 hs</span></div>
+                <p>Cédula electrónica recepcionada. Traslado de pericia contable a la contraparte.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-icon">A</div>
+              <div class="timeline-content">
+                <div class="timeline-head"><strong>Audiencia testimonial</strong><span>12 Oct 2024 · 11:00 hs</span></div>
+                <p>Incorporación de testimonios clave y actualización de estrategia para etapa siguiente.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
