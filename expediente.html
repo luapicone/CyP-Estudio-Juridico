@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyP | Gestión de Expediente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="panel-body">
+    <header class="topbar panel-topbar">
+      <div class="shell topbar-inner">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark">CyP</span>
+          <span class="brand-copy">
+            <strong>CyP Estudio Jurídico</strong>
+            <small>Gestión interna</small>
+          </span>
+        </a>
+        <nav class="nav">
+          <a href="./index.html">Sitio</a>
+          <a href="./expediente.html" class="active">Expedientes</a>
+        </nav>
+        <a class="button button-secondary" href="./index.html">Volver</a>
+      </div>
+    </header>
+
+    <main class="panel-main shell">
+      <section class="panel-header">
+        <span class="eyebrow">Portal interno</span>
+        <h1>Gestión de expediente</h1>
+        <p>Seguimiento documental, historial y carga de avances para la firma.</p>
+      </section>
+
+      <section class="dashboard-grid">
+        <aside class="dashboard-card form-card">
+          <div class="card-heading">
+            <h2>Nuevo avance</h2>
+            <span class="tag">Caso N° 12345</span>
+          </div>
+          <form class="stack-form">
+            <label>
+              <span>Fecha del evento</span>
+              <input type="date" />
+            </label>
+            <label>
+              <span>Estado actual</span>
+              <select>
+                <option>En proceso</option>
+                <option>Notificado</option>
+                <option>Audiencia</option>
+                <option>Sentencia</option>
+                <option>Archivado</option>
+              </select>
+            </label>
+            <label>
+              <span>Descripción del avance</span>
+              <textarea rows="5" placeholder="Detalle las novedades del caso"></textarea>
+            </label>
+            <label class="upload-box">
+              <input type="file" />
+              <strong>Adjuntar documentación</strong>
+              <small>PDF, DOC o imágenes vinculadas al expediente</small>
+            </label>
+            <button class="button button-primary button-block" type="submit">Guardar avance</button>
+          </form>
+
+          <div class="summary-box">
+            <h3>Resumen del expediente</h3>
+            <dl>
+              <div>
+                <dt>Carátula</dt>
+                <dd>Gómez vs. TechCorp S.A.</dd>
+              </div>
+              <div>
+                <dt>Juzgado</dt>
+                <dd>Comercial N° 4, Sec. 8</dd>
+              </div>
+              <div>
+                <dt>Última actividad</dt>
+                <dd>12 Oct 2024</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+
+        <section class="dashboard-card timeline-card">
+          <div class="card-heading">
+            <h2>Historial de actualizaciones</h2>
+            <button class="text-button" type="button">Exportar</button>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-head">
+                  <strong>Sentencia definitiva</strong>
+                  <span>14 Nov 2024 · 15:30 hs</span>
+                </div>
+                <p>
+                  El juez dictó sentencia favorable a la parte actora. Se ordena la indemnización
+                  reclamada con más intereses.
+                </p>
+                <div class="document-pill">
+                  <span>PDF</span>
+                  <small>Sentencia_Final_Gomez.pdf</small>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-head">
+                  <strong>Notificación recibida</strong>
+                  <span>28 Oct 2024 · 09:15 hs</span>
+                </div>
+                <p>
+                  Ingreso de cédula electrónica y traslado de pericia contable a la contraparte.
+                </p>
+                <div class="chip-row">
+                  <span class="mini-chip">Procesal</span>
+                  <span class="mini-chip">Pericial</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-head">
+                  <strong>Audiencia testimonial</strong>
+                  <span>12 Oct 2024 · 11:00 hs</span>
+                </div>
+                <p>
+                  Declaraciones testimoniales incorporadas al expediente. Se agregan notas de estrategia para la próxima etapa.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
